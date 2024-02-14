@@ -19,6 +19,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .text__uppercase {
   text-transform: uppercase;
