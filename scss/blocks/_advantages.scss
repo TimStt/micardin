@@ -1,0 +1,52 @@
+.advantages {
+  padding: 117px 0px 38px;
+  margin-top: -72px;
+  background-color: var(--color-white);
+
+  &__list {
+    counter-reset: new 0;
+    list-style-type: none;
+    &__item {
+      counter-increment: new 1;
+      --colorBgMarkerList: var(--colorBgMarker);
+      --sizeMarkerList: var(--sizeMarker);
+      --colorFontMarker: var(--bg-color-gray-opac05);
+    }
+
+    &__item + &__item {
+      margin-top: 57px;
+    }
+
+    &__title {
+      @include flex-center;
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 31px;
+      width: 100%;
+
+      &::before {
+        content: counter(new);
+        display: block;
+        background: var(--colorBgMarkerList);
+        @include square(var(--sizeMarkerList));
+        border-radius: 50%;
+        color: var(--colorFontMarker);
+        font-size: 96px;
+        font-weight: 600;
+
+        display: inline-flex;
+        align-items: center;
+        overflow: hidden;
+        line-height: 30px;
+        margin-right: calc(var(--sizeMarkerList) / 2 * -1);
+      }
+    }
+
+    &__description {
+      text-align: center;
+      line-height: 23px;
+      color: var(--color-black);
+    }
+  }
+}

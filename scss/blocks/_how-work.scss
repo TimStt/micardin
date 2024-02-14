@@ -1,0 +1,26 @@
+.how-work {
+  &__list {
+    margin-block: 37px;
+    --sizeMarker: 22px;
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      &::before {
+        display: block;
+        @include square(var(--sizeMarker));
+        content: "";
+        background: url("../images/heart.svg") center center no-repeat;
+      }
+    }
+    &__item + &__item {
+      margin-top: 14px;
+    }
+
+    &__text {
+      max-width: 246px;
+      width: 100%;
+    }
+  }
+}

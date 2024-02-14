@@ -1,0 +1,49 @@
+body {
+  font-family: var(--font-family-base);
+  font-weight: 450;
+  line-height: 18px;
+  color: var(--color-blue);
+  background-color: var(--color-blue-light);
+  font-size: var(--font-size-main);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.footer {
+  width: 100%;
+}
+
+// h1, h2, h3, h4 {
+//   font-weight: 500;
+// }
+
+// h1, .h1 {
+//   @include fluid-text(60, 43);
+// }
+
+// h2, .h2 {
+//   @include fluid-text(40, 36);
+// }
+
+// h3, .h3 {
+//   @include fluid-text(30, 26);
+// }
+
+// h4, .h4 {
+//   @include fluid-text(20, 18);
+// }

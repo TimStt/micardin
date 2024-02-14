@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Micardin</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <h1 class="header__title title__main">
+          Нормальное давление теперь реальность
+        </h1>
+        <p class="header__description">
+          Подари себе шанс на новую здоровую жизнь без боли, головокружения и
+          усталости.
+        </p>
+      </header>
+
+      <main class="main">
+        <section class="section action">
+          <img
+            src="./images/zero-hero-bg.png"
+            alt=""
+            class="action__image"
+            loading="lazy"
+            width="372"
+            height="359"
+          />
+          <div class="container">
+            <form class="action__form" action="#">
+              <h2 class="action__form__title">
+                До конца акции в 50% осталось:
+              </h2>
+
+              <div class="action__form__timer timer">
+                <div class="action__form__timer__inner">
+                  <div class="action__form__timer__blocks hour">
+                    <span class="action__form__timer__num num hour0">-</span>
+                    <span class="action__form__timer__num num hour1">-</span>
+                  </div>
+                  <span class="action__form__timer__bullets">:</span>
+                  <div class="action__form__timer__blocks minute">
+                    <span class="action__form__timer__num num min0">-</span>
+                    <span class="action__form__timer__num num min1">-</span>
+                  </div>
+                  <span class="action__form__timer__bullets">:</span>
+                  <div class="action__form__timer__blocks second">
+                    <span class="action__form__timer__num num sec0">-</span>
+                    <span class="action__form__timer__num num sec1">-</span>
+                  </div>
+                </div>
+
+                <div class="action__form__timer__measuring">
+                  <span
+                    class="action__form__timer__measuring-unit text__uppercase"
+                    >Часов</span
+                  >
+                  <span
+                    class="action__form__timer__measuring-unit text__uppercase"
+                    >Минут</span
+                  >
+                  <span
+                    class="action__form__timer__measuring-unit text__uppercase"
+                    >Секунд</span
+                  >
+                </div>
+              </div>
+
+              <div class="action__form__prices">
+                <div class="action__form__prices__block prices-old">
+                  <span class="action__form__prices-old"
+                    >Старая цена
+                    <span class="action__form__prices-old__crossed"
+                      >$ <span>99</span></span
+                    ></span
+                  >
+                </div>
+
+                <div class="action__form__prices__block">
+                  <span class="action__form__prices-new"
+                    >Новая цена
+                    <span class="action__form__prices-new__value">
+                      $ <span>49</span></span
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="action__form__root">
+                <input
+                  type="text"
+                  class="action__form__input"
+                  placeholder="Имя"
+                />
+                <input
+                  type="tel"
+                  class="action__form__input"
+                  placeholder="Номер телефона"
+                />
+                <button class="action__form__submit text__uppercase">
+                  заказать
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="section advantages">
+          <div class="container">
+            <ol class="advantages__list">
+              <li class="advantages__list__item">
+                <h2 class="advantages__list__title">Преимущество</h2>
+                <p class="advantages__list__description">
+                  Все больше лицензированных специалистов включают продуктв
+                  систему лечения. Оплата при получении лично в руки. Это
+                  полностью исключает вероятность мошенничества.
+                </p>
+              </li>
+              <li class="advantages__list__item">
+                <h2 class="advantages__list__title">Доступность</h2>
+                <p class="advantages__list__description">
+                  Доступная цена и любой удобный способ оплаты. Максимально
+                  простое и понятное оформление заказа.
+                </p>
+              </li>
+              <li class="advantages__list__item">
+                <h2 class="advantages__list__title">Гарантия качества</h2>
+                <p class="advantages__list__description">
+                  Продукт заверен гарантией высочайшего качества и одобрен
+                  врачами сертифицированных лабораторий.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="about-product container">
+          <div class="about-product__block">
+            <h3 class="about-product__title">
+              Более
+              <span class="about-product__title__bold"> 16000</span>
+              довольных пациентов
+            </h3>
+            <img
+              class="about-product__image"
+              src="./images/about-product.png"
+              alt="пластиковая баночка micardin на фоне с ягодами"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-product__block">
+            <h3 class="about-product__title about-product__title__natural">
+              <span class="about-product__title__bold"> 100%</span>
+              Натуральный продукт
+            </h3>
+            <p class="about-product__description">
+              <span class="about-product__description__bold">Micardin -</span>
+              100% натуральный комплекс из растительных экстрактов, который
+              безопасно снижает кровяное давление, нормализует работу
+              сердечно-сосудистой системы и препятствует образованию
+              холестериновых бляшек на стенках артерий. Предотвращает развитие
+              сердечно-сосудистых заболеваний: инфаркт миокарда, стенокардия,
+              аритмия, атеросклероз и других.
+            </p>
+          </div>
+        </section>
+        <section class="composition container">
+          <figure class="composition__card">
+            <div class="composition__card__wrapper">
+              <img
+                class="composition__card__image"
+                src="./images/composition1.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="composition__card__text-content">
+              <h3 class="composition__card__title">Свекольный порошок</h3>
+              <figcaption class="composition__card__description">
+                Снижает и нормализует кровяное давление. Присутствующий в свекле
+                бетаин регулирует жировой обмени препятствует повышению
+                кровяного давления. Также достаточное содержание магния
+                предотвращает дальнейшее развитие гипертонии.
+              </figcaption>
+            </div>
+          </figure>
+          <figure class="composition__card">
+            <div class="composition__card__wrapper">
+              <img
+                class="composition__card__image"
+                src="./images/composition2.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="composition__card__text-content">
+              <h3 class="composition__card__title">Порошок из какао-бобов</h3>
+              <p class="composition__card__description">
+                Cодержит большое количество флавоноидов. Они обладают
+                антиоксидантными свойствами и обеспечивают расширение сосудов,
+                что приводит к нормализации давления.
+              </p>
+            </div>
+          </figure>
+          <figure class="composition__card">
+            <div class="composition__card__wrapper">
+              <img
+                class="composition__card__image"
+                src="./images/composition3.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="composition__card__text-content">
+              <h3 class="composition__card__title">Порошок инжира и клюквы</h3>
+              <figcaption class="composition__card__description">
+                Оказывает успокаивающее действие на нервную систему и
+                предотвращает повышенную потерю кальция. Полезные вещества в
+                составе сокращают риск развития ишемической болезни сердцаи
+                способствуют выработке серотонина — гормона счастья, который
+                улучшает настроение и снижает уровень холестерина.
+              </figcaption>
+            </div>
+          </figure>
+          <figure class="composition__card">
+            <div class="composition__card__wrapper">
+              <img
+                class="composition__card__image"
+                src="./images/composition4.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="composition__card__text-content">
+              <h3 class="composition__card__title">Порошок инжира и клюквы</h3>
+              <figcaption class="composition__card__description">
+                Главное свойство - профилактика онкологии. Куркума очищает
+                кровь, защищает сосуды от повреждений. Порошок кайгуа очищает
+                организм от токсинов и шлаков, восстанавливает кровообращение.
+              </figcaption>
+            </div>
+          </figure>
+          <figure class="composition__card">
+            <div class="composition__card__wrapper">
+              <img
+                class="composition__card__image"
+                src="./images/composition5.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="composition__card__text-content">
+              <h3 class="composition__card__title">Порошок кайгуа</h3>
+              <figcaption class="composition__card__description">
+                Эффективно очищает организм от токсинов и шлаков,
+                восстанавливает кровообращение.
+              </figcaption>
+            </div>
+          </figure>
+        </section>
+        <section class="how-work container">
+          <h2 class="how-work__title title__main">Как работает Micardin</h2>
+
+          <ul class="how-work__list">
+            <li class="how-work__list__item">
+              <p class="how-work__list__text">
+                Улучшает работу сердечно-сосудистой системы
+              </p>
+            </li>
+            <li class="how-work__list__item">
+              <p class="how-work__list__text">Укрепляет кровеносные сосуды</p>
+            </li>
+            <li class="how-work__list__item">
+              <p class="how-work__list__text">Очищает сосуды от холестерина</p>
+            </li>
+            <li class="how-work__list__item">
+              <p class="how-work__list__text">
+                Нормализует артериальное давление
+              </p>
+            </li>
+            <li class="how-work__list__item">
+              <p class="how-work__list__text">
+                Восстанавливает прочность и гибкость сосудов и капилляров
+              </p>
+            </li>
+            <li class="how-work__list__item">
+              <p class="how-work__list__text">Разжижает и очищает кровь</p>
+            </li>
+            <li class="how-work__list__item">
+              <p class="how-work__list__text">
+                Устраняет отеки и варикозное расширение вен
+              </p>
+            </li>
+            <li class="how-work__list__item">
+              <p class="how-work__list__text">
+                Улучшает сон, настроение и общее самочувствие
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="expert-opinion">
+          <div class="container">
+            <h2 class="expert-opinion__title title__main">Мнение эксперта</h2>
+            <img
+              class="expert-opinion__image"
+              src="./images/expert.jpeg"
+              alt=""
+            />
+            <p class="expert-opinion__about">
+              <span class="expert-opinion__about__names">имя фамилия</span>
+              <span class="expert-opinion__about__profession">кардиолог</span
+              ><span> д.м.н. </span
+              ><span class="expert-opinion__about__position">профессор</span>
+            </p>
+            <p class="expert-opinion__description">
+              Я принимал участие в исследованиях разных препаратов от
+              гипертонии, но после наглядных результатов исследования препарата
+              Micardin, все стало понятно и очевидно. Более 2 лет шла разработка
+              состава для подбора инновационной формулы на основе результатов
+              тестов клиентов. По итогу разработка ученых превосходит
+              традиционные лекарства благодаря увеличению срока его действия и
+              эффективности. Micardin блокирует ключевой механизм развития
+              заболевания и исключает побочные эффекты. Болезнь большене
+              возвращается и это удивительно!
+            </p>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="container">
+            <h2 class="feedback__title title__main">
+              Как
+              <span class="feedback__title__uppercase text__uppercase"
+                >micardin</span
+              >
+              помог другим людям?
+            </h2>
+            <div class="feedback__slider swiper">
+              <div class="feedback__slider__wrapper swiper-wrapper">
+                <figure class="feedback__slider__slide swiper-slide">
+                  <header class="feedback__slider__header">
+                    <img
+                      class="feedback__slider__image"
+                      src="./images/feedback_1.jpg"
+                      alt="фотография женщины"
+                      loading="lazy"
+                      height="116"
+                      width="109"
+                    />
+                    <p class="feedback__slider__about">
+                      <span class="feedback__slider__about__name"
+                        >Жен имя
+                      </span>
+                      ,
+                      <br />
+                      <span class="feedback__slider__about__age"> 61 </span>
+                      лет
+                    </p>
+                    <div class="feedback__slider__rating">
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                    </div>
+                  </header>
+                  <p class="feedback__slider__description">
+                    Мучалась повышенным давлением уже 7 лет. Давление
+                    поднималось неожиданно, на работе, за рулем, в любое время.
+                    В голове всегда была пульсирующая боль. Знакомая
+                    посоветовала новое средство Micardin и дала сайт, где
+                    заказать. Я все внимательно изучила и решила купить.
+                    Принимаю уже две недели. Голова больше не болит и не
+                    кружится. Давление за это время ни разу не беспокоило. Буду
+                    проходить курс до конца!
+                  </p>
+                </figure>
+                <figure class="feedback__slider__slide swiper-slide">
+                  <header class="feedback__slider__header">
+                    <img
+                      class="feedback__slider__image"
+                      src="./images/feedback_2.jpeg"
+                      alt="фотография женщины"
+                      loading="lazy"
+                      height="116"
+                      width="109"
+                    />
+                    <p class="feedback__slider__about">
+                      <span class="feedback__slider__about__name"
+                        >Жен имя
+                      </span>
+                      ,
+                      <br />
+                      <span class="feedback__slider__about__age"> 61 </span>
+                      лет
+                    </p>
+                    <div class="feedback__slider__rating">
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                    </div>
+                  </header>
+                  <p class="feedback__slider__description">
+                    Мучалась повышенным давлением уже 7 лет. Давление
+                    поднималось неожиданно, на работе, за рулем, в любое время.
+                    В голове всегда была пульсирующая боль. Знакомая
+                    посоветовала новое средство Micardin и дала сайт, где
+                    заказать. Я все внимательно изучила и решила купить.
+                    Принимаю уже две недели. Голова больше не болит и не
+                    кружится. Давление за это время ни разу не беспокоило. Буду
+                    проходить курс до конца!
+                  </p>
+                </figure>
+                <figure class="feedback__slider__slide swiper-slide">
+                  <header class="feedback__slider__header">
+                    <img
+                      class="feedback__slider__image"
+                      src="./images/feedback_3.jpeg"
+                      alt="фотография женщины"
+                      loading="lazy"
+                      height="116"
+                      width="109"
+                    />
+                    <p class="feedback__slider__about">
+                      <span class="feedback__slider__about__name"
+                        >Жен имя
+                      </span>
+                      ,
+                      <br />
+                      <span class="feedback__slider__about__age"> 61 </span>
+                      лет
+                    </p>
+                    <div class="feedback__slider__rating">
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                      <span
+                        class="feedback__slider__rating__value is-active"
+                      ></span>
+                    </div>
+                  </header>
+                  <p class="feedback__slider__description">
+                    Мучалась повышенным давлением уже 7 лет. Давление
+                    поднималось неожиданно, на работе, за рулем, в любое время.
+                    В голове всегда была пульсирующая боль. Знакомая
+                    посоветовала новое средство Micardin и дала сайт, где
+                    заказать. Я все внимательно изучила и решила купить.
+                    Принимаю уже две недели. Голова больше не болит и не
+                    кружится. Давление за это время ни разу не беспокоило. Буду
+                    проходить курс до конца!
+                  </p>
+                </figure>
+              </div>
+              <div
+                class="feedback__slider__pagination"
+                id="pagination-feedback"
+              >
+                <button
+                  class="feedback__slider__bullet is-active"
+                  title="перейти ко первому слайду"
+                ></button>
+                <span class="visually-hidden">перейти к первому слайду</span
+                ><button
+                  class="feedback__slider__bullet"
+                  title="перейти ко второму слайду"
+                ></button>
+                <span class="visually-hidden">перейти ко второму слайду</span
+                ><button
+                  class="feedback__slider__bullet"
+                  title="перейти к третьему слайду"
+                ></button>
+                <span class="visually-hidden">перейти к третьему слайду</span>
+              </div>
+            </div>
+            <div class="feedback__favour">
+              <p class="feedback__favour__text">
+                Регулярный прием капсул укрепляет сосуды и улучшает
+                кровоснабжение.
+              </p>
+              <p class="feedback__favour__text">
+                Достаточно всего 2 капсул в день, по одной утром и вечером.
+              </p>
+              <p class="feedback__favour__text">
+                Рекомендована длительность курса от 1 месяца.
+              </p>
+            </div>
+          </div>
+          <img
+            class="action-bottom__image action__image"
+            src="./images/feedback_.png"
+            alt="micardin банка"
+          />
+        </section>
+        <section class="section action-bottom action">
+          <div class="container">
+            <div class="action-bottom__description">
+              <p class="action-bottom__description__text">
+                На сегодняшний день лучшим решением для профилактики и лечения
+                гипертонии считается препарат
+                <span
+                  class="action-bottom__description__uppercase text__uppercase"
+                  >MICARDIN</span
+                >. Сделайте здоровый образ жизни своей привычкой!
+              </p>
+              <p class="action-bottom__description__text">
+                Закажите капсулы
+                <span
+                  class="action-bottom__description__uppercase text__uppercase"
+                  >MICARDIN</span
+                >
+                прямо сейчас со
+                <span class="action-bottom__description__color"
+                  >скидкой 50%!</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <img
+            class="action-bottom__image action__image"
+            src="./images/zero-hero-bg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="container">
+            <form class="action__form" action="#">
+              <h2 class="action__form__title">
+                До конца акции в 50% осталось:
+              </h2>
+              <div class="action__form__timer timer">
+                <div class="action__form__timer__inner">
+                  <div class="action__form__timer__blocks hour">
+                    <span class="action__form__timer__num num hour0">-</span>
+                    <span class="action__form__timer__num num hour1">-</span>
+                  </div>
+                  <span class="action__form__timer__bullets">:</span>
+                  <div class="action__form__timer__blocks minute">
+                    <span class="action__form__timer__num num min0">-</span>
+                    <span class="action__form__timer__num num min1">-</span>
+                  </div>
+                  <span class="action__form__timer__bullets">:</span>
+                  <div class="action__form__timer__blocks second">
+                    <span class="action__form__timer__num num sec0">-</span>
+                    <span class="action__form__timer__num num sec1">-</span>
+                  </div>
+                </div>
+                <div class="action__form__timer__measuring">
+                  <span
+                    class="action__form__timer__measuring-unit text__uppercase"
+                    >Часов</span
+                  >
+                  <span
+                    class="action__form__timer__measuring-unit text__uppercase"
+                    >Минут</span
+                  >
+                  <span
+                    class="action__form__timer__measuring-unit text__uppercase"
+                    >Секунд</span
+                  >
+                </div>
+              </div>
+              <div class="action__form__prices">
+                <div class="action__form__prices__block prices-old">
+                  <span class="action__form__prices-old"
+                    >Старая цена
+                    <span class="action__form__prices-old__crossed"
+                      >$ <span>99</span></span
+                    ></span
+                  >
+                </div>
+                <div class="action__form__prices__block">
+                  <span class="action__form__prices-new"
+                    >Новая цена
+                    <span class="action__form__prices-new__value">
+                      $ <span>49</span></span
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="action__form__root">
+                <input
+                  type="text"
+                  class="action__form__input"
+                  placeholder="Имя"
+                />
+                <input
+                  type="tel"
+                  class="action__form__input"
+                  placeholder="Номер телефона"
+                />
+                <button class="action__form__submit text__uppercase">
+                  заказать
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="https://cdn.leadreaktor.com/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

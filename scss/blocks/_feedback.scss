@@ -1,0 +1,106 @@
+.feedback {
+  padding-block: 31px 0px;
+
+  --boxShadowSliderCard: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  --sizeButtonPagination: 16px;
+  --activeBgBtnPagination: var(--color-red-colourful);
+  --bgSliderCard: linear-gradient(
+      180deg,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255) 100%
+    ),
+    rgb(255, 255, 255);
+
+  &__slider {
+    &__slide {
+      border-radius: 10px;
+      box-shadow: var(--boxShadowSliderCard);
+      background: var(--bgSliderCard);
+      margin-block: 45px 24px;
+      overflow: hidden;
+    }
+
+    &__description {
+      margin: 17px 21px 21px 26px;
+      font-weight: 400;
+      overflow-y: scroll;
+
+      max-height: 390px;
+    }
+
+    &__about {
+      font-weight: 700;
+      padding-top: 17px;
+    }
+
+    &__header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__rating {
+      width: 100%;
+
+      --colorEmptyRating: lightgrey;
+      --colorRating: var(--color-red-colourful);
+      --sizeRating: 24px;
+
+      &__value {
+        padding: 0;
+        font-size: var(--sizeRating);
+
+        line-height: 1;
+        color: var(--colorEmptyRating);
+
+        &:before {
+          content: "★";
+        }
+        &.is-active {
+          color: var(--colorRating);
+        }
+      }
+    }
+
+    &__pagination {
+      @include flex-center;
+      gap: 24px;
+      position: relative !important;
+      margin-inline: auto;
+      margin-bottom: 50px;
+    }
+
+    &__bullet {
+      @include reset-button;
+
+      transition: background-color 0.3s ease-in-out;
+      border: 1px solid var(--color-black);
+      background-color: var(--color-white);
+      @include square(var(--sizeButtonPagination));
+      border-radius: 50%;
+
+      &.is-active {
+        background-color: var(--activeBgBtnPagination);
+      }
+
+      @include hover {
+        background-color: var(--activeBgBtnPagination);
+      }
+    }
+
+    &__image {
+      border-bottom-right-radius: 54px;
+      grid-row: span 2;
+    }
+  }
+
+  &__favour {
+    text-align: center;
+
+    &__text + &__text {
+      margin-top: 15px;
+    }
+    &__text:last-child {
+      margin-bottom: 34px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.action-bottom {
+  --bgGradientColor: radial-gradient(
+    100% 29% at 48% 3%,
+    rgb(255, 255, 255) 20.313%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: var(--bgGradientColor);
+
+  &__description {
+    text-align: center;
+    padding-block: 15px;
+    &__text {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    &__text + &__text {
+      margin-top: 20px;
+    }
+
+    &__uppercase {
+      color: var(--color-red-colourful);
+    }
+  }
+}

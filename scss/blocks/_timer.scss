@@ -1,0 +1,47 @@
+.action__form__timer {
+  margin-bottom: 9px;
+  &__inner {
+    @include flex-center;
+  }
+
+  --gapNumbers: 4px;
+  --widthNumber: 33px;
+
+  &__blocks {
+    @include flex-center;
+
+    gap: 4px;
+    max-width: var(--maxWidthBlocks);
+  }
+
+  &__bullets {
+    color: var(---color-red);
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  &__num {
+    font-size: 36px;
+    border-radius: 5px;
+    background: var(--linear-gradient-red);
+    @include flex-center(true);
+    width: 33px;
+    height: 47px;
+
+    font-weight: 400;
+
+    line-height: 42px;
+    color: var(--color-white);
+  }
+
+  &__measuring {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  &__measuring-unit {
+    line-height: 15px;
+    font-size: 12px;
+    color: var(---color-red);
+  }
+}

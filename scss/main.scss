@@ -1,0 +1,6 @@
+@import "./libs/fonts", "./libs/fonts", "./libs/mixins", "./libs/variables",
+  "./libs/utils", "./libs/globals", "./libs/normalize";
+
+@import "blocks/action", "blocks/header", "blocks/timer", "blocks/advantages",
+  "blocks/about-product", "blocks/composition", "blocks/how-work",
+  "blocks/expert-opinion", "blocks/feedback.scss", "blocks/action-bottom";

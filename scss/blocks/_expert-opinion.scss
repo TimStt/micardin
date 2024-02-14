@@ -1,0 +1,35 @@
+.expert-opinion {
+  --borderImageColor1: var(--redOpacity50);
+  --borderImageColor2: var(--pink-light);
+  --widthBorderImage: 10px;
+  background-color: var(--color-white);
+  padding-block: 37px;
+
+  &__image-wrapper {
+    position: relative;
+  }
+  &__image {
+    /* clip-path: circle(38% at 50% 50%); */
+
+    border: var(--widthBorderImage) solid var(--borderImageColor1);
+    box-shadow: 0 0 0 var(--widthBorderImage) var(--borderImageColor2);
+    border-radius: 50%;
+    margin-block: calc(var(--widthBorderImage) + 25px)
+      calc(var(--widthBorderImage) + 18px);
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  &__about {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+  }
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}

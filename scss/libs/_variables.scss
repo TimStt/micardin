@@ -1,0 +1,45 @@
+:root {
+  --color-blue: #232e72;
+
+  --font-family-base: "Futura pt", sans-serif;
+  --color-blue-light: #b9dfff;
+  --container-width: 320px;
+  --container-padding-x: 20px;
+  --font-size-main: 18px;
+  --color-black: #000000;
+  --letter-spacing: -1px;
+  ---color-red: #be0600;
+  --color-red-colourful: #ff3131;
+  --color-gray-light: #a3a3a3;
+  --shadowOpacity25: 0px 4px 4px #00000040;
+  --pink-light: #fbd6d6;
+  --redOpacity50: #ff313180;
+  --sumbitButtonHeight: 61px;
+  --bg-lineare-gradiend-bl-yel: linear-gradient(
+      0deg,
+      rgb(35, 46, 114) 0%,
+      rgb(58, 92, 253) 100%
+    ),
+    rgb(255, 198, 0);
+
+  --colorBgMarker: linear-gradient(
+    90deg,
+    rgb(255, 49, 49),
+    rgba(255, 0, 0, 0) 100%
+  );
+  --sizeMarker: 106px;
+  --bg-color-gray-opac05: rgba(255, 255, 255, 0.5);
+
+  --color-white: #ffffff;
+  --bg-color-white-opac08: rgba(255, 255, 255, 0.8);
+
+  --color-blue-50A: #50aaf7;
+  --border-dashes: 1px dashed rgb(255, 255, 255);
+  --linear-gradient-red: linear-gradient(
+      180deg,
+      rgb(255, 130, 128),
+      rgba(255, 255, 255, 0) 100%
+    ),
+    rgb(218, 1, 10);
+  --input-height: 32px;
+}

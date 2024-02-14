@@ -1,0 +1,129 @@
+.action {
+  &__image {
+    margin-inline: auto;
+    height: auto;
+  }
+  &__form {
+    position: relative;
+    z-index: 10;
+    border: var(--border-dashes);
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--color-blue-50A);
+    padding: 16px 12px 27px;
+    min-width: 283px;
+
+    &__title {
+      font-size: var(--font-size-main);
+      width: 100%;
+      text-wrap: nowrap;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    &__prices {
+      @include flex-center;
+      margin-bottom: 17px;
+
+      &__block {
+        height: 100%;
+        font-weight: 600;
+        line-height: 18px;
+
+        text-align: center;
+        width: 100%;
+
+        &.prices-old {
+          @include flex-center;
+
+          &::after {
+            content: "";
+            display: block;
+            height: 89px;
+            width: 1px;
+            background-color: var(--color-white);
+            opacity: 0.2;
+            margin-inline: 15px 12px;
+          }
+        }
+      }
+    }
+    &__prices-old {
+      height: 100%;
+      font-weight: 600;
+      line-height: 18px;
+
+      text-align: center;
+      width: 100%;
+      &__crossed {
+        text-decoration: line-through;
+      }
+    }
+    &__prices-new {
+      color: var(--color-red-colourful);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 35px;
+
+      text-align: center;
+
+      &__value {
+        font-size: 36px;
+      }
+    }
+
+    &__input {
+      --fieldInputHeight: var(--input-height);
+      --fieldInputTextColor: var(--color-blue);
+      --fieldInputBgColor: var(--bg-color-white-opac08);
+      //   --fieldInputBorderColor: var(--color-dark);
+      --fieldInputPlaceholderColor: var(--color-gray-light);
+      //   --fieldInputHoverBgColor: var(--color-accent);
+
+      width: 100%;
+      border-radius: 42px;
+      height: var(--fieldInputHeight);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      background-color: var(--fieldInputBgColor);
+      padding-inline: 17px;
+      border: none;
+      color: var(--fieldInputTextColor);
+
+      &:focus {
+        border: 1px solid var(--color-blue-50A);
+        outline: none;
+      }
+
+      &::placeholder {
+        color: var(--fieldInputPlaceholderColor);
+        color: rgb(163, 163, 163);
+
+        font-weight: 400;
+        line-height: 23px;
+      }
+    }
+    &__input + &__input {
+      margin-block: 16px 25px;
+    }
+    &__submit {
+      border-radius: 95px;
+      height: var(--sumbitButtonHeight);
+      padding-inline: 25px;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--color-white);
+      transition: all 0.3s linear;
+      @include reset-button;
+      width: 100%;
+      line-height: 46px;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+      background-color: var(--color-blue);
+
+      @include hover {
+        background-color: var(--color-blue-50A);
+        // color: var();
+      }
+    }
+  }
+}
