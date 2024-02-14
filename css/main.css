@@ -629,7 +629,7 @@ svg * {
   font-weight: 400;
   font-size: 14px;
 }
-.composition__card__card + .composition__card__card {
+.composition__card + .composition__card {
   margin-top: 50px;
 }
 

@@ -48,9 +48,9 @@
       font-weight: 400;
       font-size: 14px;
     }
-    &__card + &__card {
-      margin-top: 50px;
-    }
+  }
+  &__card + &__card {
+    margin-top: 50px;
   }
 }
 
