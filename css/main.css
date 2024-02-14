@@ -822,9 +822,10 @@ svg * {
 .feedback__slider__header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: start;
 }
 .feedback__slider__rating {
-  width: 100%;
+  width: max-content;
   --colorEmptyRating: lightgrey;
   --colorRating: var(--color-red-colourful);
   --sizeRating: 24px;
