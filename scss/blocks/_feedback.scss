@@ -22,6 +22,10 @@
 
     &__inner {
       border-radius: 10px;
+
+      -webkit-appearance: none;
+      -moz-box-shadow: var(--boxShadowSliderCard);
+      -webkit-box-shadow: var(--boxShadowSliderCard);
       box-shadow: var(--boxShadowSliderCard);
       background: var(--bgSliderCard);
       margin-block: 45px 24px;
