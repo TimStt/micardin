@@ -74,7 +74,7 @@
   --font-family-base: "Futura pt", sans-serif;
   --color-blue-light: #b9dfff;
   --container-width: 320px;
-  --container-padding-x: 20px;
+  --container-padding-x: 15px;
   --font-size-main: 18px;
   --color-black: #000000;
   --letter-spacing: -1px;
@@ -112,7 +112,7 @@
 }
 
 .container {
-  max-width: calc(var(--container-width));
+  max-width: var(--container-width);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
 }
@@ -801,13 +801,21 @@ svg * {
       rgb(255, 255, 255) 100%
     ),
     rgb(255, 255, 255);
+  --maxWidthCardSlider: 270px;
+  --headerPaddingCard: 17px;
 }
 .feedback__slider__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback__slider__inner {
   border-radius: 10px;
   box-shadow: var(--boxShadowSliderCard);
   background: var(--bgSliderCard);
   margin-block: 45px 24px;
   overflow: hidden;
+  max-width: var(--maxWidthCardSlider);
 }
 .feedback__slider__description {
   margin: 17px 21px 21px 26px;
@@ -817,7 +825,8 @@ svg * {
 }
 .feedback__slider__about {
   font-weight: 700;
-  padding-top: 17px;
+  height: max-content;
+  margin-block: var(--headerPaddingCard);
 }
 .feedback__slider__header {
   display: grid;
@@ -829,6 +838,7 @@ svg * {
   --colorEmptyRating: lightgrey;
   --colorRating: var(--color-red-colourful);
   --sizeRating: 24px;
+  padding-right: var(--headerPaddingCard);
 }
 .feedback__slider__rating__value {
   padding: 0;
