@@ -11,7 +11,9 @@
     ),
     rgb(255, 255, 255);
   --maxWidthCardSlider: 270px;
-  --headerPaddingCard: 17px;
+  --headerMarginCard: 17px;
+  --descriptionMaxHeight: 390px;
+  --scrollIndentDescription: 13px;
 
   &__slider {
     &__slide {
@@ -31,14 +33,14 @@
       margin: 17px 21px 21px 26px;
       font-weight: 400;
       overflow-y: scroll;
-
-      max-height: 390px;
+      padding-right: var(--scrollIndentDescription);
+      max-height: var(--descriptionMaxHeight);
     }
 
     &__about {
       font-weight: 700;
       height: max-content;
-      margin-block: var(--headerPaddingCard);
+      margin-block: var(--headerMarginCard);
     }
 
     &__header {
@@ -53,7 +55,7 @@
       --colorEmptyRating: lightgrey;
       --colorRating: var(--color-red-colourful);
       --sizeRating: 24px;
-      padding-right: var(--headerPaddingCard);
+      margin-right: var(--headerMarginCard);
 
       &__value {
         padding: 0;
